@@ -23,6 +23,7 @@
         'opsz' 48
     }
   </style>
+  <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -43,10 +44,31 @@
             <input type="text" placeholder="Find your recipe here..." class="px-5 py-[6px] rounded-full">
           </form>
         </div>
+
         <div class="block md:hidden">
-          <span class="material-symbols-outlined">
+          <span class="material-symbols-outlined" id="hamburger-icon">
             menu
           </span>
+          <div id="hamburger-menu"
+            class="bg-stone-100 w-full h-screen fixed z-[100] top-0 bottom-0 hidden p-8">
+            <div class="flex justify-end">
+              <span id="close-icon" class="material-symbols-outlined text-red-500">
+                close
+              </span>
+            </div>
+
+            <a href="#home" class="mt-10 inline-block">Home</a>
+            <a href="#food" class="flex items-center mt-10">
+              Food category
+              <span class="material-symbols-outlined">
+                expand_more
+              </span>
+            </a>
+            <form action="GET" class="mt-10 w-full bg-red-50">
+              <input type="text" placeholder="Find your recipe here..." class="px-5 py-[6px] rounded-full w-full">
+            </form>
+
+          </div>
         </div>
       </div>
     </nav>
@@ -58,12 +80,13 @@
         Easily</p>
     </header>
 
-    <img src="assets/leaf-1.svg" alt="" class="absolute z-[1] top-52 -left-4 lg:-left-8  w-20 md:w-40 lg:w-56">
-    <img src="assets/leaf-2.svg" alt=""
+    <img src="assets/leaf-1.svg" alt="Leaf for decoration"
+      class="absolute z-[1] top-52 -left-4 lg:-left-8  w-20 md:w-40 lg:w-56">
+    <img src="assets/leaf-2.svg" alt="Leaf for decoration"
       class="absolute z-[1] top-24 -left-4 lg:-left-8 w-10 md:w-24 lg:w-28 rotate-[210deg]">
-    <img src="assets/leaf-2.svg" alt=""
+    <img src="assets/leaf-2.svg" alt="Leaf for decoration"
       class="absolute z-[1] top-52 -right-4 lg:-right-8 w-16 md:w-36 lg:w-48 rotate-12">
-    <img src="assets/leaf-1.svg" alt=""
+    <img src="assets/leaf-1.svg" alt="Leaf for decoration"
       class="absolute z-[1] top-24 -right-4 lg:-right-8 w-12 md:w-20 lg:w-28 rotate-[210deg]">
 
 
@@ -79,15 +102,6 @@
       </div>
     </main>
   </div>
-
-  <script>
-    $(document).ready(function () {
-      $("button").click(function () {
-        $("p").hide();
-      });
-    });
-  </script>
-
 </body>
 
 </html>
