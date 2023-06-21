@@ -23,11 +23,11 @@ $(document).ready(function () {
         }
         $('#ingredients>ol').append(
           `
-          <li class='flex justify-between' >
-            <span class="w-[50%]">
+          <li class='flex justify-start lg:justify-between lg:gap-0 flex-wrap mt-3' >
+            <span class="w-[50%] text-left">
             ${i + ". " + detailMeal["strIngredient" + i]} 
             </span>
-            <span class="w-[50%]">
+            <span class="w-[50%] text-left">
             (${detailMeal["strMeasure" + i]})
             </span>
           </li>
