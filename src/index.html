@@ -7,15 +7,78 @@
   <title>Document</title>
   <link href="/dist/output.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+    }
+  </style>
 </head>
 
 <body>
-  <h2 class="text-2xl font-bold">This is a heading</h2>
+  <div class="bg-stone-100 w-full min-h-screen overflow-hidden relative">
+    <nav
+      class="bg-stone-100 shadow w-full h-[64px] flex justify-between items-center lg:px-8 md:px-4 px-2 fixed top-0 right-0 left-0 z-50">
+      <img src="assets/logo.svg" alt="Foodie Logo" class="w-24">
+      <div>
+        <div class="hidden md:flex justify-center gap-12 items-center text-sm">
+          <a href="#home">Home</a>
+          <a href="#food" class="flex items-center">
+            Food category
+            <span class="material-symbols-outlined">
+              expand_more
+            </span>
+          </a>
+          <form action="GET">
+            <input type="text" placeholder="Find your recipe here..." class="px-5 py-[6px] rounded-full">
+          </form>
+        </div>
+        <div class="block md:hidden">
+          <span class="material-symbols-outlined">
+            menu
+          </span>
+        </div>
+      </div>
+    </nav>
 
-  <p>This is a paragraph.</p>
-  <p>This is another paragraph.</p>
+    <header class="text-center mt-8">
+      <p class="text-xl md:text-2xl lg:text-[31px] tracking-wider relative z-10">Delicious</p>
+      <h1 class="text-7xl md:text-8xl lg:text-9xl my-3 relative z-10">Foodie</h1>
+      <p class="text-[17px] md:text-2xl lg:text-[31px] tracking-widest text-red-400 relative z-10">Find Food Recipe
+        Easily</p>
+    </header>
 
-  <button class="py-2 px-4 bg-zinc-800 rounded-full text-white">Click me</button>
+    <img src="assets/leaf-1.svg" alt="" class="absolute z-[1] top-52 -left-4 lg:-left-8  w-20 md:w-40 lg:w-56">
+    <img src="assets/leaf-2.svg" alt=""
+      class="absolute z-[1] top-24 -left-4 lg:-left-8 w-10 md:w-24 lg:w-28 rotate-[210deg]">
+    <img src="assets/leaf-2.svg" alt=""
+      class="absolute z-[1] top-52 -right-4 lg:-right-8 w-16 md:w-36 lg:w-48 rotate-12">
+    <img src="assets/leaf-1.svg" alt=""
+      class="absolute z-[1] top-24 -right-4 lg:-right-8 w-12 md:w-20 lg:w-28 rotate-[210deg]">
+
+
+    <main class="my-8 flex justify-center gap-10 flex-wrap">
+      <div class="bg-white rounded-2xl p-3 w-60 h-80 shadow-md relative z-10">
+        <div class="bg-[#E9E6E5] rounded-lg w-full aspect-square"></div>
+      </div>
+      <div class="bg-white rounded-2xl p-3 w-60 h-80 shadow-md relative z-10">
+        <div class="bg-[#E9E6E5] rounded-lg w-full aspect-square"></div>
+      </div>
+      <div class="bg-white rounded-2xl p-3 w-60 h-80 shadow-md relative z-10">
+        <div class="bg-[#E9E6E5] rounded-lg w-full aspect-square"></div>
+      </div>
+    </main>
+  </div>
 
   <script>
     $(document).ready(function () {
