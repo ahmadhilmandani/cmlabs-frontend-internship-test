@@ -1,7 +1,10 @@
 $(document).ready(function () {
   let params = new URLSearchParams(window.location.search);
   let parameterValue = params.get("i");
+  let parameterValueMealName = params.get("c");
   let detailMeal
+
+  $('#nav-meal-list-by-category').attr('href', `../foodListByCategory/foodListByCategory.html?c=${parameterValueMealName}`)
 
   axios.get('https://www.themealdb.com/api/json/v1/1/lookup.php?i=' + parameterValue)
     .then(function (response) {
