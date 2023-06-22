@@ -23,7 +23,7 @@ Sebelum menjalankan aplikasi ini, pastikan mesin Anda memiliki prasyarat berikut
 
 1. Clone repositori ini ke mesin lokal Anda menggunakan perintah berikut:
    ```bash
-   git clone https://github.com/username/https://github.com/ahmadhilmandani/cmlabs-frontend-internship-test.git
+   git clone https://github.com/ahmadhilmandani/cmlabs-frontend-internship-test.git
    ```
    
 2. Pergi ke folder cmlabs-frontend-internship-test dengan perintah berikut:
