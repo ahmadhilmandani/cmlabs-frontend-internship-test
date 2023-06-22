@@ -22,7 +22,6 @@ Sebelum menjalankan aplikasi ini, pastikan mesin Anda memiliki prasyarat berikut
 ## Instalasi
 
 1. Clone repositori ini ke mesin lokal Anda menggunakan perintah berikut:
-
    ```bash
    git clone https://github.com/username/foodiee.git
    ```
@@ -43,7 +42,6 @@ Sebelum menjalankan aplikasi ini, pastikan mesin Anda memiliki prasyarat berikut
    ```
    
 5. Lalu jalankan perintah berikut:
-
    ```bash   
    npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
    ```
