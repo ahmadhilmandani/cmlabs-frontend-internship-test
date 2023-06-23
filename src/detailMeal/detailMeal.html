@@ -67,7 +67,7 @@
       </div>
     </nav>
 
-    <div class="pt-24 px-3 lg:px-0 mx-auto max-w-[900px] text-[10px] flex gap-2">
+    <div class="pt-24 px-3 lg:px-0 mx-auto max-w-[900px] text-[10px] flex gap-2 relative z-30">
       <a href="../home/home.html" class="hover:font-semibold">Home</a>
       <span class="cursor-default">></span>
       <a id="nav-meal-list-by-category" class="cursor-pointer hover:font-semibold">Meal list by category</a>
@@ -75,19 +75,15 @@
       <a href="#foodiee" class="hover:font-semibold">Detail meal</a>
     </div>
 
-    <div class="overflow-hidden absolute z-[1] w-full min-h-screen ">
-      <img src="../assets/leaf-2.svg" alt="Leaf for decoration"
-        class="absolute z-[1] top-24 -left-4 lg:-left-8 w-10 md:w-24 lg:w-28 rotate-[210deg] hidden md:block">
-      <img src="../assets/leaf-2.svg" alt="Leaf for decoration"
-        class="absolute z-[1] top-52 -right-4 lg:-right-8 w-16 md:w-36 lg:w-48 rotate-12 hidden md:block">
-      <img src="../assets/leaf-1.svg" alt="Leaf for decoration"
-        class="absolute z-[1] top-24 -right-4 lg:-right-8 w-12 md:w-20 lg:w-28 rotate-[210deg] hidden md:block">
+    <div class="absolute top-0 left-0 right-0 h-[80vh] bg-white overflow-hidden z-[1]">
     </div>
 
 
     <main
-      class="flex mt-8 flex-col-reverse lg:flex-row lg:justify-between lg:items-start mx-auto max-w-[900px] lg:p-0 md:px-5 p-3 gap-4">
+      class="flex mt-8 flex-col-reverse lg:flex-row lg:justify-between lg:items-start mx-auto max-w-[900px] lg:p-0 md:px-5 p-3 gap-4 relative z-30">
       <div class="flex-1 text-center lg:text-left">
+        <div id="meal-name" class="mt-10">
+        </div>
         <div id="ingredients" class="mt-10">
         </div>
         <div id="instruction" class="mt-10 px-4 text-left lg:px-0">
@@ -96,7 +92,7 @@
       </div>
 
       <header id="hero-img"
-        class="bg-[#E9E6E5] aspect-square max-w-[400px] w-full z-10 rounded-xl overflow-hidden bg-cover bg-center mx-auto lg:mx-0 lg:sticky top-0 right-0 pt-12">
+        class="bg-[#E9E6E5] aspect-square max-w-[380px] w-full z-10 rounded-xl overflow-hidden bg-cover bg-center mx-auto lg:mx-0 lg:fixed top-32 right-48 pt-12">
       </header>
     </main>
 

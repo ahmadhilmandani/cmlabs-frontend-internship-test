@@ -67,13 +67,13 @@
       </div>
     </nav>
 
-    <div class="mt-24 mx-auto max-w-[900px] text-[10px] flex gap-2 px-3 lg:px-0">
+    <div class="mt-24 mx-auto max-w-[900px] text-[10px] flex gap-2 px-3 lg:px-0 relative z-30">
       <a href="../home/home.html" class="hover:font-semibold">Home</a>
       <span class="cursor-default">></span>
       <a id="nav-meal-list-by-category" href="" class="hover:font-semibold">Meal list by category</a>
     </div>
 
-    <header class="lg:flex mt-8 justify-between mx-auto max-w-[900px] lg:p-0 md:px-5 p-1 gap-4">
+    <header class="lg:flex mt-8 justify-between mx-auto max-w-[900px] lg:p-0 md:px-5 p-1 gap-4 relative z-30">
       <div id="header-content" class="flex-1 text-center lg:text-left">
       </div>
       <div id="hero-img"
@@ -82,15 +82,11 @@
 
     </header>
 
-    <img src="../assets/leaf-2.svg" alt="Leaf for decoration"
-      class="absolute z-[1] top-24 -left-4 lg:-left-8 w-10 md:w-24 lg:w-28 rotate-[210deg] hidden md:block">
-    <img src="../assets/leaf-2.svg" alt="Leaf for decoration"
-      class="absolute z-[1] top-52 -right-4 lg:-right-8 w-16 md:w-36 lg:w-48 rotate-12 hidden md:block">
-    <img src="../assets/leaf-1.svg" alt="Leaf for decoration"
-      class="absolute z-[1] top-24 -right-4 lg:-right-8 w-12 md:w-20 lg:w-28 rotate-[210deg] hidden md:block">
+    <div class="absolute top-0 left-0 right-0 h-[80vh] bg-white overflow-hidden z-[1]">
+    </div>
 
 
-    <main class="my-8 max-w-[900px] mx-auto">
+    <main class="my-8 max-w-[900px] mx-auto relative z-30">
       <h2 class="text-center lg:text-left">Meal list :</h2>
       <div class="flex justify-center gap-10 flex-wrap w-full mt-10">
 
